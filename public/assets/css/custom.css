@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #f4f6f9;
+}
+
+.container {
+    max-width: 1200px !important;
+}
+
+.title-name {
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 2px 0px 1px rgb(198, 197, 197);
+}
+
+li.nav-item button.nav-link {
+    color: black;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+li.nav-item button.nav-link.active {
+    position: relative;
+    color: #7d3cff;
+    background-color: transparent;
+}
+li.nav-item button.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #7d3cff;
+}
+
+button.close {
+    border: 0px solid white;
+    background-color: transparent;
+}
+button.close span {
+    font-size: 24px;
+    font-weight: 800;
+    color: rgb(102, 102, 102);
+}
+
+button.close:hover span {
+    color: rgb(65, 65, 65);
+}
+
+h5.modal-title {
+    font-weight: 700;
+    color: rgb(102, 102, 102);
+}
+
+input.form-control {
+    border: 1px solid rgba(123, 123, 123, 0.2);
+    font-size: 14px;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 0;
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 7px #ececec;
+}
+
+.card-header,
+.card-body,
+.card-footer {
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+}
+.card-header h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #7d3cff;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-body {
+    width: 100%;
+}
+
+.media-title {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.media-footer .kategori {
+    font-size: 13px;
+}
+
+.media-footer .periode {
+    font-size: 14px;
+}
+
+.dashboard {
+    height: 200px;
+}

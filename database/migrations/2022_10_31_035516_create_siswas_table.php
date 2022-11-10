@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('siswas', function (Blueprint $table) {
             $table->id();
+            $table->string('nama', 100);
+            $table->string('denda')->nullable();
+            $table->integer('total_pinjam')->nullable();
+            $table->string('email')->unique();
+            $table->string('no_hp')->unique();
             $table->timestamps();
         });
     }
